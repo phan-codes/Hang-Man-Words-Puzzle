@@ -64,8 +64,8 @@ const App = () => {
 	return (
 		<div className='max-w-[800px] flex flex-col gap-[2rem] mt-0 mx-auto items-center'>
 			<div className='text-[2rem] text-center '>
-				{isWinner && 'Winner! - Refresh to try again'}
-				{isLoser && 'Nice Try! - Refresh to try again'}
+				{isWinner && 'Winner! - Click the "Enter Key" to try again'}
+				{isLoser && 'Nice Try! - Click the "Enter Key" to try again'}
 			</div>
 			<HangManDrawing numberOfGuesses={inCorrectLetters.length} />
 			<HangManWords reveal={isLoser} guessedLetters={guessedLetters} wordsToGuess={wordsToGuess} />
